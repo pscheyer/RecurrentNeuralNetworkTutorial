@@ -33,3 +33,18 @@ Incorrect instruction on line `source venv/bin/active`. Returns
 ```
 
 Correct instruction is `source venv/bin/activate`, which creates a new virtual environment.
+
+Also had to remove a space from my path to the file to get the command to run. I was getting the error 
+```bash
+(venv)Peters-MacBook-Pro:rnn-tutorial-rnnlm peterscheyer$ pip install -r requirements.txt
+-bash: /Users/peterscheyer/Desktop/Python Projects/RecurrentNeuralNetworkTutorial/rnn-tutorial-rnnlm/venv/bin/pip: "/Users/peterscheyer/Desktop/Python: bad interpreter: No such file or directory
+```
+which is caused by the space in the folder name `Python Projects`. I replaced the space with an underscore and the requirements installation worked fine.
+
+And the `jupyter notebook` command worked! For something. In my browser it opened a bunch of stuff… did I just start a server running? wtf is jupyter
+
+20151001 1903CST
+
+>The Jupyter Notebook is a web application that allows you to create and share documents that contain live code, equations, visualizations and explanatory text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, machine learning and much more
+
+So there's that. I have one of those running now. 
